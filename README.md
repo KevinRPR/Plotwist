@@ -9,7 +9,7 @@
 [![SweetAlert2](https://img.shields.io/badge/SweetAlert2-11.7.0-EE590F?logo=sweetalert2)](https://sweetalert2.github.io/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-🔹 [English](#english-version) | 🇪🇸 [Español](#versión-en-español)
+🔹 [English](#english-version) | 🇻🇪 [Español](#versión-en-español)
 
 ---
 
@@ -64,7 +64,7 @@
 
 ---
 
-## 🇪🇸 Versión en Español
+<h2 id="versión-en-español">## 🇻🇪 Versión en Español </h2>
 
 **Plotwist** es una aplicación web moderna que utiliza la API de Google Books para ofrecer una experiencia interactiva de descubrimiento de libros. Diseñada con un enfoque en la usabilidad y la estética, incluye filtros de búsqueda dinámicos, categorías temáticas y resultados en tiempo real.
 
