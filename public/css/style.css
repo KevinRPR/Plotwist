@@ -1,0 +1,213 @@
+/* Configuración global */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/img/Frame-22.svg'); /* Fondo */
+  background-size: cover;
+  background-position: center;
+  font-family: 'DM Sans', sans-serif; /* Tipografía global */
+}
+
+/* Tipografía */
+h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  color: #608dfd;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/Frame-14.svg) no-repeat center;
+  background-color: #e1f0eb;
+  background-size: cover;
+  position: relative;
+}
+
+.text-container {
+  text-align: left;
+  max-width: 100%;
+  padding: 20px;
+  z-index: 2;
+}
+
+.category-title {
+  font-size: 20px;
+  color: #48967c;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 75px; /* Tamaño original para pantallas grandes */
+  font-weight: 800;
+  color: #45459b;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.main-title span {
+  font-style: italic;
+  color: #45459b;
+}
+
+.description {
+  font-size: 18px;
+  color: #5e6282;
+  margin-bottom: 30px;
+  max-width: 75%; 
+}
+
+.btn-start {
+  display: inline-block;
+  background-color: #48967c;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #367a63;
+}
+
+/* Cuadros flotantes */
+.floating-box {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  background-color: #45459b;
+  border-radius: 20px;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+.box-1 {
+  top: 20%;
+  left: 60%;
+}
+
+.box-2 {
+  top: 50%;
+  right: 15%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .main-title {
+    font-size: 60px; /* Ajuste ligero para laptops */
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 603px) {
+  header {
+    background-size: 150%;
+    padding: 20px;
+  }
+  .text-container {
+    text-align: center;
+  }
+  .main-title {
+    font-size: 40px; /* Ajuste para móviles */
+  }
+  .description {
+    font-size: 1.9rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
+  .btn-start {
+    font-size: 1.9rem;
+    padding: 10px 20px;
+  }
+  .floating-box {
+    display: none; /* Ocultar cuadros flotantes en pantallas pequeñas */
+  }
+  div.container:nth-child(7) {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 810px) and (max-width: 1024px) and (orientation: portrait) {
+  header {
+    height: 60vh; /* Reducir la altura total del header */
+    padding-bottom: 10px; /* Espacio inferior controlado */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-direction: column; /* Asegurar que los elementos se apilen verticalmente */
+  }
+
+  .text-container {
+    margin-top: 0 !important; /* Eliminar cualquier margen superior */
+    text-align: center; /* Centrar el texto dentro del contenedor */
+  }
+
+  .main-title {
+    font-size: 50px; /* Ajuste adicional para pantallas verticales */
+  }
+
+  .description {
+    font-size: 16px;
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+
+  .btn-start {
+    margin-top: 20px; /* Agregar espacio entre el botón y otros elementos */
+  }
+
+  .floating-box {
+    display: none; /* Ocultar cuadros flotantes en esta vista */
+  }
+}

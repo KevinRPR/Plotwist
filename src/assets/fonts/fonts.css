@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Chatime';
+    src: url('./chatime.otf') format('opentype'); /* Carga la fuente desde la carpeta */
+    font-weight: normal;
+    font-style: normal;
+  }
+  

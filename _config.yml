@@ -1,0 +1,54 @@
+# Información básica del sitio
+title: "LPGA 2.0 (Libros para gente aburrida)"
+description: "Un proyecto de portafolio diseñado para mostrar conocimientos en React, consumo de APIs (Google Books) y programación frontend."
+baseurl: "" # Ruta base (útil si el sitio no está en la raíz)
+url: "https://pga2-0.web.app" # URL completa del sitio
+author: "Kevin Palencia"
+
+# Configuración del entorno
+env: production # Cambiar a 'development' si estás probando localmente
+
+# Configuración de colecciones
+collections:
+  projects:
+    output: true # Genera una página para cada elemento en la colección
+
+# Configuración de Markdown
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub Flavored Markdown para compatibilidad
+
+# Configuración de permalinks (estructura de las URLs)
+permalink: /:categories/:title/ # Estructura URL: /categoría/título/
+
+# Plugins (ejemplo de posibles plugins para Jekyll)
+plugins:
+  - jekyll-seo-tag # Mejora SEO
+  - jekyll-sitemap # Genera un mapa del sitio automáticamente
+  - jekyll-paginate # Permite paginación en listas largas
+  - jekyll-feed # Genera feeds RSS automáticamente
+
+# Variables personalizadas
+site_purpose: "Mostrar conocimientos avanzados en programación frontend."
+framework: "React"
+features:
+  - "Consumo de datos de la API de Google Books"
+  - "Diseño moderno y responsivo"
+  - "Prácticas de desarrollo frontend eficientes"
+
+# Configuración de salida
+exclude:
+  - node_modules # Evitar que esta carpeta se incluya en la salida generada
+  - README.md
+  - package.json
+  - package-lock.json
+
+# Configuración de paginación
+paginate: 6 # Número de elementos por página (en caso de lista de proyectos)
+paginate_path: "/page:num/" # Estructura de las páginas paginadas
+
+# Meta para redes sociales
+social:
+  github: "https://github.com/KevinRPR"
+  
+

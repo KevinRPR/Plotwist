@@ -1,0 +1,300 @@
+/* CSS completo */
+
+
+div.row:nth-child(1){
+  margin-top: 16rem;
+}
+div.container:nth-child(7) {
+  margin-top: 10rem;
+}
+div.col-md-6:nth-child(1){
+  padding-left: 34px;
+}
+
+.bg-dark {
+  background-color: #1a1a1a;
+  border-radius: 20px; /* Borde redondeado */
+}
+
+.bg-primary {
+  background-color: #4e73df;
+  border-radius: 20px; /* Borde redondeado */
+}
+
+.btn-success {
+  background-color: #48967C;
+  border: none;
+  font-size: 2rem;
+  color: #E1F0EB;
+
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  z-index: 10; /* Asegura que esté encima */
+  border-radius: 20px; /* Borde redondeado */
+  width: 100%; /* Ancho del botón */
+  height: 158px; /* Alto del botón */
+  padding: 0px;
+}
+
+.btn-success:hover {
+  background-color: #48967C;
+}
+
+.aspect-ratio-box {
+  position: relative;
+  border-radius: 20px; /* Borde redondeado */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+/* Imagen 1 */
+.img1 {
+  width: 100%;
+  height: 753px;
+  margin-right: 40px; /* Espacio a la derecha */
+  background-image: url('../assets/img/lay/img1-lay.jpg'); /* Ruta relativa */
+  background-size: cover; /* Asegura que la imagen cubra el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+}
+
+
+/* Sección OVER 3000 */
+.over3000 {
+  height: 346px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../assets/img/banner-medio.svg'); /* Ruta relativa */
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+h3{
+  margin:0;
+}
+
+/* Imagen 3 */
+.img3 {
+  width: 405px; /* Ancho fijo */
+  height: 569px; /* Altura fija */
+  background-color: #45459b; /* Fondo morado */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  border-radius: 20px; /* Bordes redondeados */
+  box-sizing: border-box; /* Para que el padding no altere el tamaño */
+  overflow: hidden; /* Para evitar que el contenido sobresalga */
+  padding: 0; /* Asegura que no haya padding adicional que altere el tamaño */
+}
+
+/* Contenedor de texto */
+#container-text-mid {
+  text-align: center; /* Centra el texto */
+  color: white; /* Color de texto blanco */
+  width: 100%; /* Asegurarse de que ocupe todo el espacio disponible */
+  padding: 0 15px; /* Agregar padding solo a los lados, si es necesario */
+  height: 100%; /* Asegurarse de que ocupe el 100% del alto disponible */
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Centra el texto verticalmente */
+  overflow: hidden; /* Evita que el texto se desborde */
+}
+
+/* Títulos y texto dentro de img3 */
+#container-text-mid h3 {
+  font-size: 5rem; /* Tamaño de letra para 'OVER' */
+  margin: 0;
+  color: #E1F0EB;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600 ;
+}
+
+#container-text-mid h1 {
+  font-size: 7rem; /* Tamaño de letra para '3000+' */
+  margin: 8px 0; /* Espaciado vertical */
+  font-weight: 700;
+  color: #E1F0EB;
+  font-family: 'DM Sans', sans-serif;
+}
+
+#container-text-mid p {
+  font-size: 2.75rem; /* Tamaño de letra para 'Books, Comics and Manga' */
+  margin: 8px 0;
+  color: #E1F0EB;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+}
+
+#container-text-mid small {
+  font-size: 2.75rem; /* Tamaño de letra para 'Books, Comics and Manga' */
+  margin: 8px 0;
+  color: #E1F0EB;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 5rem;
+  display: block; /* Aseguramos que se muestre en una nueva línea */
+}
+
+
+/* Imagen 4 */
+.img4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 569px; /* 
+  Igual altura que img3 */
+}
+
+.img4 {
+  width: 100%;
+  height: 389px;
+  background-image: url('../assets/img/lay/img3-lay.jpg'); /* Ruta desde public */
+  background-size: cover; /* Ajusta la imagen para cubrir el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+}
+
+
+/* Botón 2 */
+.btn2 {
+
+margin-bottom: 30px;
+}
+
+/* Aumentar espacio entre los elementos */
+.row.g-3 > * {
+  margin-top: 3rem;
+  margin-bottom: 40px;
+}
+
+
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+/* Nueva regla para margen negativo */
+.margin-top-negative {
+  margin-top: -5px !important; /* Margen negativo solo para este elemento */
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  .over3000 {
+    display: none;
+  }
+
+  div.col-md-6:nth-child(1) {
+    padding-left: 15px; /* Igual a los 15px del otro lado */
+    padding-right: 0px; /* Uniforme para ambos lados */
+  }
+
+  /* Ajustes de imagen para centrado */
+  .img1 {
+    height: 350px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    max-width: 352px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+
+  .img3 {
+    width: 100%;
+    max-width: 350px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+
+  .img4 {
+    width: 100%;
+    max-width: 352px; /* Ancho máximo */
+    height: 300px;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+
+  /* Botón centrado en móvil */
+  .btn-success {
+    width: 100%;
+    max-width: 352px; /* Ancho máximo */
+    height: 100px;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+
+  .btn2 {
+    margin-left: auto;
+    margin-right: auto; /* Centra el botón */
+    margin-bottom: 30px;
+  }
+
+  /* Ajuste de margen negativo */
+  .margin-top-negative {
+    margin-top: -45px !important;
+  }
+  div.container:nth-child(7) {
+    margin-top: -10rem;
+  }
+  div.col-md-6:nth-child(2){
+    padding-right: 15px;
+    padding-left: 30px;
+  }
+}
+
+/* Solución para paddings inconsistentes */
+div.col-md-6 {
+  padding-left: 15px; /* Padding uniforme */
+  padding-right: 15px; /* Padding uniforme */
+}
+
+
+
+
+@media screen and (min-width: 810px) and (max-width: 1080px) and (orientation: portrait) {
+  /* Centrar y ajustar ancho de img1 */
+  .img1 {
+    width: 45%; /* Ocupa el 45% del contenedor */
+    max-width: 300px; /* Ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0; /* Elimina márgenes */
+    background-image: url('../assets/img/lay/img1-lay.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+
+  /* Centrar y ajustar ancho de btn-success */
+  .btn-success {
+    width: 90%; /* Reduce el ancho al 90% del contenedor */
+    max-width: 400px; /* Ancho máximo */
+    height: 120px; /* Ajusta la altura */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+
+  /* Centrar y ajustar ancho de img3 */
+  .img3 {
+    width: 100%; /* Reduce el ancho al 90% del contenedor */
+    max-width: 775px; /* Ancho máximo */
+    height: auto; /* Ajusta automáticamente la altura */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+
+  /* Centrar y ajustar ancho de img4 */
+  
+.col-md-4 > div:nth-child(2) > button:nth-child(1){
+  display: none;
+}
+.img4{
+  display: none !important;
+}
+.bg-primary{
+  display: none;
+}
+div.row:nth-child(1){
+  margin-top: -7em;
+}
+
+  /* Centrar y ajustar ancho de btn2 */
+  .btn2 {
+    width: 90%; /* Reduce el ancho al 90% del contenedor */
+    max-width: 400px; /* Ancho máximo */
+    height: 100px; /* Ajusta la altura */
+    margin: 0 auto 30px; /* Centra horizontalmente y añade margen inferior */
+  }
+}
